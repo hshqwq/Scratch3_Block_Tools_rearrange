@@ -1,0 +1,405 @@
+#s3devToolBar {
+	display: flex;
+	white-space: nowrap;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#s3devFindLabel {
+	display: flex;
+}
+#s3devFindLabel>span:first-child {
+	margin-left: 1.8em;
+	margin-right: .5em;
+	font-weight: bold;
+	font-size: 0.625rem;
+	user-select: none;
+	cursor: default;
+	white-space: nowrap;
+	padding-top: 2px;
+}
+#s3devFind {
+	height: 2rem;
+	overflow: visible;
+	position: relative;
+}
+#s3devInp {
+	margin-top: .25em;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: calc(0.5rem / 2);
+	font-size: .75rem;
+	font-weight: bold;
+	padding: 0.4em;
+	z-index: 2;
+	position: relative;
+	border: 1px solid hsla(0, 0%, 0%, 0.15);
+	min-width: 100%;
+	box-sizing: border-box;
+	height: 2rem;
+}
+div#s3devDDOut {
+	z-index: 100;
+	top: -6px;
+	left: 0;
+	width: 20em;
+	position: relative;
+	padding: 4px;
+}
+ul#s3devDD {
+	display: none;
+	position: relative;
+	padding: 0em 0;
+	font-size: 0.9rem;
+	line-height: 0;
+	overflow-y: auto;
+	min-height: 128px;
+	max-height: 75vh;
+	user-select: none;
+	max-width: 100%;
+}
+div#s3devDDOut.vis {
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .3);
+	background-color: white;
+	border: none;
+	border-radius: 0px;
+}
+div#s3devDDOut.vis ul#s3devDD {
+	display: block;
+	border: none;
+}
+#s3devDD>li {
+	display: block;
+	padding: 0.5em 0.3em;
+	white-space: nowrap;
+	margin: 0 auto;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#s3devDD>li>b {
+	background-color: #aaffaa;
+	color: black;
+}
+#s3devDD>li:hover,
+#s3devDD>li.sel {
+	color: white;
+	cursor: pointer;
+}
+#s3devDD>li.community::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=8379862cfc016dd4af3bbe054df498f5.svg");
+}
+#s3devDD>li.stringExt::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=0ecca77027d05cbcaa8fa1f59f763c42.svg");
+}
+#s3devDD>li.js::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=5f8663fd03aedbaa7717b298ec7d3e41.svg");
+}
+#s3devDD>li.trans::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=df77f00e9d32de5de286d770cb5405d5.svg");
+}
+#s3devDD>li.speech::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=dc4bef8f449b17a4ddaf63a1fc513156.svg");
+}
+#s3devDD>li.pen::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=29f1cd2d840ef9e2531c226968b23e3c.svg");
+}
+#s3devDD>li.lazyaudio::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=61d241cc1d3ff2c65d11b60d21899a75.svg");
+}
+#s3devDD>li.puzzie::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=a3f53ecd5c26b5c5f6229dea2a9f78fa.svg");
+}
+#s3devDD>li.canvas::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=277a7223ac671186861a98a83074e91e.svg");
+}
+#s3devDD>li.define::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=82677b35ecee2b5c62c93629db9a4f05.svg");
+}
+#s3devDD>li.flag::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=fb6cc4a72c365813d51400564eea1b08.svg");
+}
+#s3devDD>li.receive::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=fb6cc4a72c365813d51400564eea1b08.svg");
+}
+#s3devDD>li.event::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=fb6cc4a72c365813d51400564eea1b08.svg");
+}
+#s3devDD>li.var::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=37f9a111802dd13250d08a2553563f59.svg");
+}
+#s3devDD>li.VAR::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=37f9a111802dd13250d08a2553563f59.svg");
+}
+#s3devDD>li.list::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=37f9a111802dd13250d08a2553563f59.svg");
+}
+#s3devDD>li.LIST::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=37f9a111802dd13250d08a2553563f59.svg");
+}
+#s3devDD>li.music::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=43e0efab4f10bbedf328ee91fedcdd59.svg");
+}
+#s3devDD>li.video::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=d66bd2b25be44e720637440b73990782.svg");
+}
+#s3devDD>li.battle::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=16f9f3067439b868fc3b6edc193627ae.svg");
+}
+#s3devDD>li.motion::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=7f36a52d2d8526890798eb4c2c6d6eb4.svg");
+}
+#s3devDD>li.look::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=e0b91122990d8ec53a79e59f0979364b.svg");
+}
+#s3devDD>li.sound::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=80e204103321488e896ee1a08aaf0c0f.svg");
+}
+#s3devDD>li.control::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=6dd42c5781c23ee4fc477147716b3f75.svg");
+}
+#s3devDD>li.sensing::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=3e817d01a5760fdf4a941535c42c3675.svg");
+}
+#s3devDD>li.operation::before {
+	content: url("https://cdn.mozhua.org/Project/GetAsset?name=ea8b9f911b201444ca933adfbb5a0a4d.svg");
+}
+.stringExt,
+.js,
+.trans,
+.speech,
+.pen,
+.community,
+.lazyaudio,
+.puzzie,
+.music,
+.video,
+.battle,
+.canvas {
+	color: rgb(15,189,140);
+}
+.define {
+	color: rgb(255,102,128);
+}
+.flag {
+	color: rgb(76,191,86);
+}
+.receive {
+	color: rgb(255, 191, 0);
+}
+.event {
+	color: rgb(255, 191, 0);
+}
+.var,
+.VAR {
+	color: rgb(255, 140, 26);
+}
+.list,
+.LIST {
+	color: rgb(255, 102, 26);
+}
+.motion {
+	color: rgb(76,151,255);
+}
+.look {
+	color: rgb(153,102,255);
+}
+.sound {
+	color: rgb(214,92,214);
+}
+.control {
+	color: rgb(255,171,25);
+}
+.sensing {
+	color: rgb(76,191,230);
+}
+.operation {
+	color: rgb(64,191,74);
+}
+.js:hover,
+.js.sel,
+.trans:hover,
+.trans.sel,
+.speech:hover,
+.speech.sel,
+.pen:hover,
+.pen.sel,
+.canvas:hover,
+.canvas.sel,
+.community:hover,
+.community.sel,
+.lazyaudio:hover,
+.lazyaudio.sel,
+.stringExt:hover,
+.stringExt.sel,
+.music:hover,
+.music.sel,
+.video:hover,
+.video.sel,
+.battle:hover,
+.battle.sel,
+.puzzie:hover,
+.puzzie.sel {
+	background-color: rgb(15, 189, 140);
+}
+.define:hover,
+.define.sel {
+	background-color: rgb(255, 102, 128);
+}
+.flag:hover,
+.flag.sel {
+	background-color: #4CBF56;
+}
+.receive:hover,
+.receive.sel {
+	background-color: rgb(255, 191, 0);
+}
+.event:hover,
+.event.sel {
+	background-color: rgb(255, 191, 0);
+}
+.var:hover,
+.var.sel,
+.VAR:hover,
+.VAR.sel {
+	background-color: rgb(255, 140, 26);
+}
+.list:hover,
+.list.sel,
+.LIST:hover,
+.LIST.sel {
+	background-color: rgb(255, 102, 26);
+}
+.motion:hover,
+.motion.sel {
+	background-color: rgb(76,151,255);
+}
+.look:hover,
+.look.sel {
+	background-color: rgb(153,102,255);
+}
+.sound:hover,
+.sound.sel {
+	background-color: rgb(214,92,214);
+}
+.control:hover,
+.control.sel {
+	background-color: rgb(255,171,25);
+}
+.sensing:hover,
+.sensing.sel {
+	background-color: rgb(76,191,230);
+}
+.operation:hover,
+.operation.sel {
+	background-color: rgb(64,191,74);
+}
+#s3devOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(80, 80, 80, 0.5);
+	z-index: 9999;
+	padding: 10em;
+	color: white;
+	font-weight: bold;
+}
+#s3devMulti {
+	font-weight: normal;
+	position: absolute;
+	right: 0;
+	white-space: nowrap;
+	background-color: inherit;
+	z-index: 1;
+	padding: 0;
+}
+.s3devNav {
+	padding: 0 6px;
+}
+.s3devNav:hover {
+	color: #ffff80;
+}
+#s3devDeep {
+	margin-left: 1em;
+	display: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+#s3devCleanUp {
+	margin-top: .15em;
+	padding-left: .75rem;
+	padding-right: .75rem;
+	font-size: 10px;
+	font-weight: bold;
+	padding-top: .2rem;
+	background-color: dodgerblue;
+	border: 0;
+	color: white;
+	border-radius: 5px;
+	height: 2rem;
+	-webkit-box-align: center;
+	
+}
+
+#s3devfindtext{
+	margin-top: .25em;
+}
+
+#hydevshoop{
+	margin-top: .15em;
+	padding-left: .75rem;
+	padding-right: .75rem;
+	font-size: 10px;
+	font-weight: bold;
+	padding-top: .2rem;
+	background-image: linear-gradient(to bottom, #01002b 0%, #01002b 30%, #010053 100%);
+	border: 0;
+	color: white;
+	border-radius: 5px;
+	height: 2rem;
+	-webkit-box-align: center;
+}
+
+#scratch_style{
+	margin-left: .25rem;
+	margin-top: .15em;
+	padding-left: .75rem;
+	padding-right: .75rem;
+	font-size: 10px;
+	font-weight: bold;
+	padding-top: .2rem;
+	background-color: darkorchid;
+	border: 0;
+	color: white;
+	border-radius: 5px;
+	height: 2rem;
+	-webkit-box-align: center;
+
+	position: relative;
+    display: inline-block;
+}
+
+#scratch_style .set_style{
+	visibility: hidden;
+    width: 350px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+	border: 1;
+
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+}
+
+#scratch_style:hover .set_style{
+	visibility: visible;
+}
+
+.input_color{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-color:white;
+	width: 30px;
+}

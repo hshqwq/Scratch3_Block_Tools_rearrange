@@ -1,0 +1,37 @@
+{
+	"author": "Griffpatch,Tim-Fang,ForestPark,Dannr,刺猬Jerry",
+	"browser_action": {
+		"default_icon": "favicon.png"
+	},
+	"content_scripts": [{
+		"all_frames": false,
+		"css": ["inject.css"],
+		"js": ["injectSimple.js"],
+		"matches": [
+			"https://scratch.mit.edu/projects/*",
+			"https://llk.github.io/scratch-gui/*",
+			"https://*.aerfaying.com/Projects/*",
+			"https://kada.163.com/project/v3/create.htm",
+			"https://kada.163.com/project/create/*"
+		],
+		"run_at": "document_idle"
+	}],
+	"description": "Scratch 3 Tools 可以为您在 https://scratch.mit.edu/,https://aerfaying.com/,https://kada.163.com/,https://llk.github.io/. 更高效的编程。感谢Dannr、TimFang、森林公园提供帮助。",
+	"homepage_url": "https://www.griffpatch.co.uk",
+	"icons": {
+		"128": "bigIcon.png",
+		"32": "favicon.png"
+	},
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnElB0JpPIGd/MMSae9mKapn4Jxp6Vlb8LWDo0GKXL94BZKpiShaw6+fb6yVM8DwBhVrqxVagmjSjSdFC1SvcUHvbyJDl7YQTctB05aUM2jeN1BG0YWEbHLeto01qdfZTwDK7lDeyU2hAk74u3H0VotV38K5DyxKsmqwg3A4O0e+N6xEnZwI9GdT83UrUS1dHj/w839D961GMHmUxg5Jwutu9QwjHiD8jDTEcN6KsozokPh0VmHrAwm/7C6uXshGxxG89bbMpURWvslGaATJgUwbrjPZelHHStq9KgzMSzNstInwkAW/nCLm6j4PicMDUMKzc1DjUyAroh5tgMGKfbwIDAQAB",
+	"manifest_version": 2,
+	"name": "Scratch 3 Blocks Tools",
+	"permissions": [
+		"https://scratch.mit.edu/*",
+		"https://llk.github.io/scratch-gui/*",
+		"https://*.aerfaying.com/*",
+		"https://kada.163.com/*"
+	],
+	"short_name": "Scratch 3 Tools",
+	"version": "4.0.1.200825",
+	"web_accessible_resources": ["inject3.js"]
+}
